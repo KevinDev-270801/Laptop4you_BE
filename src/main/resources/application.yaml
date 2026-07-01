@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: be_laptop4you
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME} #Trong Environment Variables
+    password: ${DB_PASSWORD}
+    url: jdbc:mysql://localhost:3306/laptop4you
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
