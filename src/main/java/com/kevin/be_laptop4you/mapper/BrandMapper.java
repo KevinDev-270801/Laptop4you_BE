@@ -4,13 +4,17 @@ import com.kevin.be_laptop4you.dto.request.BrandRequest;
 import com.kevin.be_laptop4you.dto.response.BrandResponse;
 import com.kevin.be_laptop4you.entity.Brand;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface BrandMapper {
 
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "status", ignore = true)
     Brand toEntity(BrandRequest request);
+
 
     BrandResponse toResponse(Brand brand);
 

@@ -17,6 +17,7 @@ public class Brand extends Base{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nameBrand;
+    private boolean status;
 
     @OneToMany(mappedBy = "brand", fetch = FetchType.LAZY)
     private List<Product> productList = new ArrayList<>();

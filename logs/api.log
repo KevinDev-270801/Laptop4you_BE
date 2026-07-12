@@ -1,0 +1,5 @@
+2026-07-12 22:56:09.607 | INFO  | requestId=e034a5bc1680445f933e80eaf0a143b1 | GET | /api/v1/brands/1 | anonymous | status=200 | duration=346ms | ip=0:0:0:0:0:0:0:1
+2026-07-12 22:56:41.035 | INFO  | requestId=f39bae38dc7b44b28f16808f461a13d0 | GET | /api/v1/brands/1 | anonymous | status=200 | duration=9ms | ip=0:0:0:0:0:0:0:1
+2026-07-12 23:07:14.981 | INFO  | requestId=c9f3b1bb18514caaaca196570701f283 | GET | /api/v1/brands | anonymous | status=200 | duration=73ms | ip=0:0:0:0:0:0:0:1
+2026-07-12 23:07:51.548 | WARN  | requestId=8ff45e03c9e240d0b8f37e0d86bc522d | RESOURCE_ALREADY_EXISTS | 409 | PUT /api/v1/brands/3 | Tên thương hiệu đã tồn tại
+2026-07-12 23:07:51.556 | WARN  | requestId=8ff45e03c9e240d0b8f37e0d86bc522d | PUT | /api/v1/brands/3 | anonymous | status=409 | duration=101ms | ip=0:0:0:0:0:0:0:1

@@ -11,3 +11,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+  logging:
+    config: classpath:logback-spring.xml
+    level:
+      com.kevin.be_laptop4you: INFO

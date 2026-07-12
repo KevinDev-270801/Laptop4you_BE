@@ -8,6 +8,6 @@ import lombok.Setter;
 public class BrandResponse {
 
     private Long id;
-
     private String nameBrand;
+    private boolean status;
 }
