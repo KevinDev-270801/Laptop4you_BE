@@ -20,6 +20,10 @@ Backend REST API for **Laptop4You**, an e-commerce platform for managing laptops
 - Auditable base entities
 - Health and application monitoring support with Spring Boot Actuator
 
+## Database Schema Diagram
+<img width="1934" height="1697" alt="diagram" src="https://github.com/user-attachments/assets/7226bd0d-b7fe-4877-b398-b0e20d5fc619" />
+
+
 ## Tech Stack
 
 | Technology | Purpose |
