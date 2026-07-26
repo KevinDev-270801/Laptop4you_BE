@@ -3,7 +3,7 @@ spring:
     name: be_laptop4you
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${DB_USERNAME} #Trong Environment Variables
+    username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     url: jdbc:mysql://localhost:3306/laptop4you
 

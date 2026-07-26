@@ -19,6 +19,7 @@ public class Supplier extends Base{
     private String name;
     private String phoneNumber;
     private String email;
+    private Boolean active;
 
     @OneToMany(mappedBy = "supplier", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<PurchaseOrder> purchaseOrders = new ArrayList<>();
