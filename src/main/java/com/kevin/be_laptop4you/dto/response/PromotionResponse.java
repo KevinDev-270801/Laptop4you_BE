@@ -1,5 +1,6 @@
 package com.kevin.be_laptop4you.dto.response;
 
+import com.kevin.be_laptop4you.enums.PromotionStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +16,7 @@ public class PromotionResponse {
 
     private Integer discountPercent;
 
-    private Boolean active;
+    private PromotionStatus status;
 
     private LocalDate startDate;
 

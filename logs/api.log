@@ -51,3 +51,28 @@
 2026-07-26 20:07:46.590 | INFO  | requestId=5145803d7fdf4d30be4c143e94e3715a | GET | /api/v1/suppliers/1 | anonymous | status=200 | duration=490ms | ip=0:0:0:0:0:0:0:1
 2026-07-26 20:07:52.457 | INFO  | requestId=ed000ca8804b4927a614a44e9a6ef251 | DELETE | /api/v1/suppliers/1 | anonymous | status=204 | duration=153ms | ip=0:0:0:0:0:0:0:1
 2026-07-26 20:07:57.563 | INFO  | requestId=38482a6727b34501ac04ad898f282767 | GET | /api/v1/suppliers/1 | anonymous | status=200 | duration=8ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:33:35.428 | WARN  | requestId=a597b743e8df42cb9be9b4e5e4ce815f | VALIDATION_ERROR | 400 | POST /api/v1/promotions | Ngày kết thúc phải sau ngày bắt đầu
+2026-07-26 22:33:35.467 | WARN  | requestId=a597b743e8df42cb9be9b4e5e4ce815f | POST | /api/v1/promotions | anonymous | status=400 | duration=469ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:36:28.851 | INFO  | requestId=279703d1ef2e4ffebf831df598bf20a6 | POST | /api/v1/promotions | anonymous | status=201 | duration=54301ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:39:11.937 | INFO  | requestId=b292776653334948881a06b4300755d3 | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=411ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:40:41.681 | INFO  | requestId=48306089c35241e3907b1fdba2f970d6 | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=582ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:41:04.511 | INFO  | requestId=6272e03d1b88449ba17668fd9df522ab | POST | /api/v1/promotions | anonymous | status=201 | duration=297ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:41:26.045 | WARN  | requestId=5a34b0af5d61439481caf5d523080a74 | VALIDATION_ERROR | 400 | POST /api/v1/promotions | {status=must not be null}
+2026-07-26 22:41:26.061 | WARN  | requestId=5a34b0af5d61439481caf5d523080a74 | POST | /api/v1/promotions | anonymous | status=400 | duration=50ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:42:12.092 | INFO  | requestId=2f1180e22046438cb44c1804f4250005 | POST | /api/v1/promotions | anonymous | status=201 | duration=807ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:42:58.140 | INFO  | requestId=55c0e294725a4bfbb3f7e03a26c2ced0 | POST | /api/v1/promotions | anonymous | status=201 | duration=18ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:43:24.439 | INFO  | requestId=213c6d7b1cd441e6b1d6bfbd2841ff96 | POST | /api/v1/promotions | anonymous | status=201 | duration=19ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:44:03.042 | WARN  | requestId=adc2426339fc45f6ba99f60058e3836c | VALIDATION_ERROR | 400 | POST /api/v1/promotions | Ngày kết thúc phải sau ngày bắt đầu
+2026-07-26 22:44:03.055 | WARN  | requestId=adc2426339fc45f6ba99f60058e3836c | POST | /api/v1/promotions | anonymous | status=400 | duration=30ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:44:14.432 | WARN  | requestId=2a5e4da043984e1c86756a2743119d54 | VALIDATION_ERROR | 400 | POST /api/v1/promotions | Ngày kết thúc phải sau ngày bắt đầu
+2026-07-26 22:44:14.435 | WARN  | requestId=2a5e4da043984e1c86756a2743119d54 | POST | /api/v1/promotions | anonymous | status=400 | duration=14ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:44:34.483 | WARN  | requestId=f45105aa17434060920886373f56755c | INVALID_REQUEST | 400 | POST /api/v1/promotions | No enum constant com.kevin.be_laptop4you.enums.PromotionStatus.RUNNING
+2026-07-26 22:44:34.485 | WARN  | requestId=f45105aa17434060920886373f56755c | POST | /api/v1/promotions | anonymous | status=400 | duration=12ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:45:43.537 | INFO  | requestId=bc5f60b7276d4cbe9d2d410332051909 | GET | /api/v1/promotions | anonymous | status=200 | duration=123ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:46:15.129 | INFO  | requestId=f62df9a9408945929fba5047c179fc3c | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=18ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:46:39.412 | INFO  | requestId=4ffcd5731fbb4fcb9f658810b7562278 | DELETE | /api/v1/promotions/1 | anonymous | status=204 | duration=37ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:46:43.994 | INFO  | requestId=9cf3517b4de9487c86c01b9f66f73a29 | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=18ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:46:47.210 | INFO  | requestId=02e3eddcf17d4100983fdec74345f112 | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=9ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:46:55.169 | INFO  | requestId=81dc44319cd7484693162dd27d4d5b40 | DELETE | /api/v1/promotions/1 | anonymous | status=204 | duration=15ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:47:28.216 | INFO  | requestId=0c6c09fd15644065b586209b89e60f3f | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=17ms | ip=0:0:0:0:0:0:0:1
+2026-07-26 22:48:13.077 | INFO  | requestId=280be0d6e57043dbb312e69de702550d | GET | /api/v1/promotions/1 | anonymous | status=200 | duration=567ms | ip=0:0:0:0:0:0:0:1

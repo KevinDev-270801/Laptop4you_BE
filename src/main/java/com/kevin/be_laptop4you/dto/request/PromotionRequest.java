@@ -21,8 +21,8 @@ public class PromotionRequest {
     @Max(value = 100)
     private Integer discountPercent;
 
-    @NotNull
-    private Boolean active;
+
+    private String status;
 
     @NotNull
     private LocalDate startDate;
