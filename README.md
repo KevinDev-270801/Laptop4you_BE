@@ -164,18 +164,18 @@ http://localhost:8080
 
 ### Phase 3 — Supplier Management
 
-- [ ] Complete the Supplier entity and database mapping
-- [ ] Create Supplier request and response DTOs
-- [ ] Implement Supplier mapping with MapStruct
-- [ ] Create a supplier
-- [ ] Update supplier information
-- [ ] Get a supplier by ID
-- [ ] Get paginated suppliers
-- [ ] Search suppliers by name, phone number, or email
-- [ ] Activate or deactivate a supplier
-- [ ] Prevent duplicate supplier information
-- [ ] Prevent deletion when a supplier is referenced by purchase orders
-- [ ] Add validation and exception handling
+- [x] Complete the Supplier entity and database mapping
+- [x] Create Supplier request and response DTOs
+- [x] Implement Supplier mapping with MapStruct
+- [x] Create a supplier
+- [x] Update supplier information
+- [x] Get a supplier by ID
+- [x] Get paginated suppliers
+- [x] Search suppliers by name, phone number, or email
+- [x] Activate or deactivate a supplier
+- [x] Prevent duplicate supplier information
+- [x] Prevent deletion when a supplier is referenced by purchase orders
+- [x] Add validation and exception handling
 - [ ] Add automated tests for Supplier APIs
 
 ### Phase 4 — Promotion Management
