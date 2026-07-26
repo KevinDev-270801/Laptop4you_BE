@@ -180,15 +180,15 @@ http://localhost:8080
 
 ### Phase 4 — Promotion Management
 
-- [ ] Complete the Promotion entity and database mapping
-- [ ] Create Promotion request and response DTOs
-- [ ] Create, update, and view promotions
-- [ ] Get paginated promotions
-- [ ] Search promotions by name
-- [ ] Validate promotion start and end dates
-- [ ] Validate discount values and discount types
-- [ ] Automatically determine promotion availability
-- [ ] Activate, deactivate, or expire promotions
+- [x] Complete the Promotion entity and database mapping
+- [x] Create Promotion request and response DTOs
+- [x] Create, update, and view promotions
+- [x] Get paginated promotions
+- [x] Search promotions by name
+- [x] Validate promotion start and end dates
+- [x] Validate discount values and discount types
+- [x] Automatically determine promotion availability
+- [x] Activate, deactivate, or expire promotions
 - [ ] Prevent overlapping or invalid promotion periods
 - [ ] Add automated tests for Promotion APIs
 
