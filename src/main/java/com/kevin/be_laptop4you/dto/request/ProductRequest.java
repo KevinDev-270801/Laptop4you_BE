@@ -41,9 +41,6 @@ public class ProductRequest {
     @PositiveOrZero(message = "Số lượng không được âm")
     private Integer quantity;
 
-    @NotNull
-    private Boolean active;
-
     @NotNull(message = "Brand không được để trống")
     private Long brandId;
 

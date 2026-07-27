@@ -12,6 +12,8 @@ public class ProductResponse {
 
     private Long id;
 
+    private String thumbnail;
+
     private String name;
 
     private Integer ram;
@@ -30,7 +32,7 @@ public class ProductResponse {
 
     private Integer quantity;
 
-    private Boolean active;
+    private String status;
 
     private Long brandId;
 
@@ -39,6 +41,4 @@ public class ProductResponse {
     private Long promotionId;
 
     private String promotionName;
-
-    private List<String> images;
 }

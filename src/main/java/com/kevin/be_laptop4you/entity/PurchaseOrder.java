@@ -1,8 +1,10 @@
 package com.kevin.be_laptop4you.entity;
 
+import com.kevin.be_laptop4you.enums.PurchaseOrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,11 @@ public class PurchaseOrder extends  Base{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime importDate;
+
+    @Enumerated(EnumType.STRING)
+    private PurchaseOrderStatus purchaseOrderStatus;
+
+    private BigDecimal totalAmount;
 
     @OneToMany(mappedBy = "purchaseOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<PurchaseOrderItem> purchaseOrderItems = new ArrayList<>();

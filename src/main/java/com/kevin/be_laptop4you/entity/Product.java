@@ -1,5 +1,6 @@
 package com.kevin.be_laptop4you.entity;
 
+import com.kevin.be_laptop4you.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -40,7 +41,9 @@ public class Product  extends Base{
     private BigDecimal price;
 
     private Integer quantity;
-    private boolean active;
+
+    @Enumerated(EnumType.STRING)
+    private ProductStatus productStatus;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL , fetch = FetchType.LAZY)
     private List<ProductImage> productImages = new ArrayList<>();

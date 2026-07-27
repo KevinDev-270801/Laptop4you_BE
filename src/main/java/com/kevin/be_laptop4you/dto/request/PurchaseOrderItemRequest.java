@@ -13,7 +13,8 @@ import java.math.BigDecimal;
 @Setter
 public class PurchaseOrderItemRequest {
 
-    @NotNull
+    private ProductRequest productRequest;
+
     private Long productId;
 
     @Positive
