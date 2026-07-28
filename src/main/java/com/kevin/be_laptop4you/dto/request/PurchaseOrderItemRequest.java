@@ -13,14 +13,17 @@ import java.math.BigDecimal;
 @Setter
 public class PurchaseOrderItemRequest {
 
-    private ProductRequest productRequest;
-
+    @NotNull(message = "Sản phẩm không được để trống")
     private Long productId;
 
-    @Positive
+    @NotNull(message = "Số lượng không được để trống")
+    @Positive(message = "Số lượng nhập phải lớn hơn 0")
     private Integer quantity;
 
-    @NotNull
-    @DecimalMin(value = "0.01")
+    @NotNull(message = "Giá nhập không được để trống")
+    @DecimalMin(
+            value = "0.01",
+            message = "Giá nhập phải lớn hơn 0"
+    )
     private BigDecimal unitPrice;
 }

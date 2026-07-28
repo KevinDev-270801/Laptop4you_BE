@@ -19,9 +19,10 @@ public interface ProductMapper {
     Product toEntity(ProductRequest request);
 
     @Mapping(target = "brandId", source = "brand.id")
-    @Mapping(target = "brandName", source = "brand.name")
+    @Mapping(target = "brandName", source = "brand.nameBrand")
     @Mapping(target = "promotionId", source = "promotion.id")
     @Mapping(target = "promotionName", source = "promotion.name")
+    @Mapping(target = "status", source = "productStatus")
     ProductResponse toResponse(Product product);
 
     @Mapping(target = "id", ignore = true)
@@ -37,7 +38,6 @@ public interface ProductMapper {
             nullValuePropertyMappingStrategy =
                     NullValuePropertyMappingStrategy.IGNORE
     )
-    @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     void updateEntity(ProductRequest request, @MappingTarget Product product);
 

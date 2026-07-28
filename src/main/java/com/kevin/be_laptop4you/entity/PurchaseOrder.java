@@ -26,7 +26,11 @@ public class PurchaseOrder extends  Base{
 
     private BigDecimal totalAmount;
 
+    @Column(columnDefinition = "TEXT")
+    private String note;
+
     @OneToMany(mappedBy = "purchaseOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @Builder.Default
     private List<PurchaseOrderItem> purchaseOrderItems = new ArrayList<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -36,4 +40,18 @@ public class PurchaseOrder extends  Base{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
     private Employee employee;
+
+    public void addItem(PurchaseOrderItem item){
+        purchaseOrderItems.add(item);
+        item.setPurchaseOrder(this);
+    }
+
+    public void removeItem(PurchaseOrderItem item) {
+        purchaseOrderItems.remove(item);
+        item.setPurchaseOrder(null);
+    }
+
+    public void clearItems() {
+        purchaseOrderItems.clear();
+    }
 }
